@@ -1,4 +1,4 @@
-1. Align known terpene synthase sequences to assembled cultivar genomes. Here, we will use Exonerate https://www.ebi.ac.uk/about/vertebrate-genomics/software/exonerate-user-guide to align coding sequences to the genome while allowing large gaps to account for introns.
+1. Align known terpene synthase sequences to assembled cultivar genomes. Here, we will use Exonerate https://www.ebi.ac.uk/about/vertebrate-genomics/software/exonerate-manual to align coding sequences to the genome while allowing large gaps to account for introns.
 
 Since the fasta files with cdna sequences were created under Windows, we will need to remove carriage returns, otherwise Exonerate will not read them.
 
