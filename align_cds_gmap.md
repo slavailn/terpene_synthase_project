@@ -1,5 +1,9 @@
 Align known terpene synthase sequences to assembled cultivar genomes. Here, we will use GMAP http://research-pub.gene.com/gmap/ to align coding sequences to the genome while allowing large gaps to account for introns.
 
+Useful info about GMAP:
+* Slides - http://research-pub.gene.com/gmap/paper/demo-slides.pdf
+* Github - https://github.com/juliangehring/GMAP-GSNAP
+
 1. First, we will concatenate all cds fasta files:
 ```
 cat *.fa > all_tps.fasta
