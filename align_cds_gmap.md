@@ -16,8 +16,13 @@ sed -i 's/\r//g'  transcript.fasta
 
 First we need to build GMAP indexes for each of the assembled genomes.
 ```
-
+gmap_build -D <cultivar_genome_name> -d <cultivar_genome_name>
 ```
+Options:
+
+-D - creates an output directory for index files under the specified names.
+
+-d - suffix that wil be added to index files.
 
 ```
 exonerate --query <transcript> --querytype DNA --target <reference_genome> --targettype DNA --model cdna2genome --showalignment no --showvulgar no --showtargetgff no --ryo "%qi\t%ti\t%qab\t%qae\t%tab\t%tae\n" --minintron 10 --maxintron 1500 | head 
