@@ -29,8 +29,20 @@ Options:
 -d - suffix that wil be added to index files.
 
 ```
- 
+gmap -t 4 -A -D CBD_God_Bud_Spice -d CBD_God_Bud_Spice/ ../coding_sequences/all_tps.fasta > CBD_God_Bud_Spice_gmap_out.txt```
 ```
+Options:
+-t N - number of processor cores
+
+-A - print alignments
+
+-D - index directory
+
+-d - genome database
+
+
+
+
 
 
 
