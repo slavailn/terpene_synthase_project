@@ -28,6 +28,8 @@ Options:
 
 -d - suffix that wil be added to index files.
 
+Map the transcripts and output alignments:
+
 ```
 gmap -t 4 -A -D <index_directory> -d <genome_name> <cds.fasta> > <gmap_out.txt>
 ```
@@ -40,6 +42,12 @@ Options:
 -D - index directory
 
 -d - genome database
+
+This variation of the command will map the transcripts and output the gff files with exon coordinates:
+
+```
+gmap -t 4 --format=gff3_gene -D <index_directory> -d <genome_name> <cds.fasta> > <gmap_out.txt>
+```
 
 
 
