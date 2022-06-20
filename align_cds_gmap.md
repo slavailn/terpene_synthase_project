@@ -48,7 +48,11 @@ This variation of the command will map the transcripts and output the gff files 
 ```
 gmap -t 4 --format=gff3_gene -D <index_directory> -d <genome_name> <cds.fasta> > <gmap_out.txt>
 ```
+Once, the gff file are ready you can view the transcripts using the IGV genomic browser: https://software.broadinstitute.org/software/igv/download 
 
+IGV user guide: https://software.broadinstitute.org/software/igv/UserGuide
+
+Load the appropriate genome assembly as a reference along with the correspoding gff file and view the transcript mappings. 
 
 
 
