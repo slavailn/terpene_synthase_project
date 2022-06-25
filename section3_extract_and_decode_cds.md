@@ -14,4 +14,17 @@ This command with create a directory with 4 files:
 * longest_orfs.gff3 - gff file with detected ORFs
 * longest_orfs.pep - peptide translation of the detected ORFs
 
+3. Increase the sensitivity of transdecoder searches by retaining the transcripts with homology to known proteins and functional domains.
+First we will need to download Uniprot database in fasta format from https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/ directory:
+
+```
+wget https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+gunzip uniprot_sprot.fasta.gz
+```
+
+
+
+
+
+
 
