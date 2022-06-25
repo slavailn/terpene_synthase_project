@@ -6,7 +6,12 @@ gffread -x <cds.fasta> -g <genome.fasta> <gff>
 2. Use *Transdecoder* https://github.com/TransDecoder to identify open reading frames in previously extracted sequences:
 
 ```
-TransDecoder.LongOrfs -t CBD_God_Bud_Spice_out.fasta
+TransDecoder.LongOrfs -t <cds.fasta>
 ```
+This command with create a directory with 4 files:
+* base_freqs.dat - base freaquencies
+* longest_orfs.cds - CDS fasta
+* longest_orfs.gff3 - gff file with detected ORFs
+* longest_orfs.pep - peptide translation of the detected ORFs
 
 
