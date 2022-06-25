@@ -9,7 +9,7 @@ gffread -x <cds.fasta> -g <genome.fasta> <gff>
 TransDecoder.LongOrfs -t <cds.fasta>
 ```
 This command with create a directory with 4 files:
-* base_freqs.dat - base freaquencies
+* base_freqs.dat - base frequencies
 * longest_orfs.cds - CDS fasta
 * longest_orfs.gff3 - gff file with detected ORFs
 * longest_orfs.pep - peptide translation of the detected ORFs
