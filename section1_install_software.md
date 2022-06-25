@@ -13,4 +13,18 @@ conda install -c bioconda gffread
 ```
 conda install -c bioconda transdecoder
 ```
+4. Install BLAST:
+
+```
+conda install -c bioconda blast
+```
+
+5. Install HMMER http://hmmer.org/:
+
+```
+conda install -c bioconda hmmer
+```
+
+
+
 
