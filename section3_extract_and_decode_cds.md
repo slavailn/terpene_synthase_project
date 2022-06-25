@@ -21,7 +21,14 @@ First we will need to download Uniprot database in fasta format from https://ftp
 wget https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
 gunzip uniprot_sprot.fasta.gz
 ```
-
+Create BLAST database index in the same directory as uniprot_sprot.fasta file:
+```
+makeblastdb -in uniprot_sprot.fasta -input_type fasta -dbtype prot
+```
+Determine homology with BlastP:
+```
+blastp -query <longest_orfs.pep> -db <uniprot_sprot.fasta>  -max_target_seqs 1 -outfmt 6 -evalue 1e-5 -num_threads 4 > <blastp.outfmt6>
+```
 
 
 
