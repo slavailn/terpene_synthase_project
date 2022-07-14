@@ -44,6 +44,17 @@ Detect protein domains with hmmscan:
 ```
 hmmscan --cpu 4 --domtblout <pfam.domtblout> <pfam/Pfam-A.hmm> <transdecoder_dir/longest_orfs.pep>
 ```
+Incorporate protein BLAST and hmmscan results into transdecoder predctions. Resulting predictions will not only contain hits with sequence characteristics of coding regions, but also those with regions homologous to known proteins and functional domains.
+
+```
+ TransDecoder.Predict -t <cds.fasta> --retain_pfam_hits <pfam.domtblout> --retain_blastp_hits <blastp.outfmt6> --output_dir <transdecoder_dir>
+```
+
+
+
+
+
+
 
 
 
