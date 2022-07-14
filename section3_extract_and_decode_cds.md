@@ -29,7 +29,21 @@ Determine homology with BlastP:
 ```
 blastp -query <longest_orfs.pep> -db <uniprot_sprot.fasta>  -max_target_seqs 1 -outfmt 6 -evalue 1e-5 -num_threads 4 > <blastp.outfmt6>
 ```
-
+Detect functional domains with *hmmscan*.
+Create Pfam directory, then download Pfam-A database from http://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/
+```
+wget http://ftp.ebi.ac.uk/pub/databases/Pfam/current_release/Pfam-A.fasta.gz
+# Unzip the file
+gunzip Pfam-A.fasta.gz
+```
+In the Pfam directory, use *hmmpress* to create Pfam database index:
+```
+hmmpress Pfam-A.fasta
+```
+Detect protein domains with hmmscan:
+```
+hmmscan --cpu 4 --domtblout <pfam.domtblout> <pfam/Pfam-A.hmm> <transdecoder_dir/longest_orfs.pep>
+```
 
 
 
